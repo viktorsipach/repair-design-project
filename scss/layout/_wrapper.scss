@@ -1,0 +1,13 @@
+.wrapper {
+    width: 1440px;
+    height: 10150px;
+    margin: 0 auto;
+    background-color: gray;
+
+    @media (max-width: 860px) {
+        width: 375px;
+        height: 8796px;
+    }
+}
+
+ 
