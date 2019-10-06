@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "FuturaDemiC"; 
+  src: url("../assets/fonts/FuturaDemiC.woff2") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  } 
+
+
 .header {
     width: 100%;
     height: 0.82%;
@@ -17,7 +25,7 @@
 
 .logo {
   margin-left: 2.5%;
-  font-family:'Source Serif Pro', serif;
+  font-family:"FuturaDemiC", serif;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
@@ -25,7 +33,7 @@
 
   @media (max-width: 860px) {
     margin-right: 5%;
-    margin-left: 5%;
+    margin-left: 0;
     font-size: 12px;
     line-height: 14px;
    }
@@ -38,7 +46,7 @@
 
   
   &__link {
-    font-family: 'Source Serif Pro', serif;
+    font-family: "FuturaDemiC", serif;
     font-size: 14px;
     line-height: 16px;
     text-decoration: none;
@@ -46,7 +54,7 @@
   }
 
   &__link_disabled {
-    font-family: 'Source Serif Pro', serif;
+    font-family: "FuturaDemiC", serif;
     font-size: 14px;
     line-height: 16px;
     text-decoration: none;
@@ -64,7 +72,7 @@
 }
 
 .header-phone {
-  font-family: 'Source Serif Pro', serif;
+  font-family: "FuturaDemiC", serif;
   font-size: 14px;
   line-height: 16px;
   text-align: right;
@@ -91,7 +99,7 @@
   &__input {
     width: 100%;
     height: 100%;
-    font-family: 'Source Serif Pro', serif;
+    font-family: "FuturaDemiC", serif;
     font-size: 13px;
     line-height: 15px;
     background: #E3B873;
