@@ -53,12 +53,16 @@
     color: #FFFFFF;
   }
 
-  &__link_disabled {
+  &__link_active {
     font-family: "FuturaDemiC", serif;
     font-size: 14px;
     line-height: 16px;
     text-decoration: none;
     color: #E3B873;
+
+    &:hover {
+      color: #FFFFFF;
+    }
   }
 
   &__link:hover {
@@ -80,6 +84,7 @@
   color: #E3B873;
 
   &:hover {
+    color: #FFFFFF;
     cursor: pointer;
   }
 
@@ -112,6 +117,7 @@
     
     &:hover {
       cursor: pointer;
+      background: rgba(227, 184, 115, 0.7);
     }
 
 }

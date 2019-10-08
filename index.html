@@ -15,7 +15,7 @@
     <header class="header">
       <h1 class="logo"> IC "Repair Design Project"</h1>
       <ul class="header-menu">
-        <li class="header-menu__item"><a class="header-menu__link_disabled" href="#">HOME</a></li>
+        <li class="header-menu__item"><a class="header-menu__link_active" href="#">HOME</a></li>
         <li class="header-menu__item"><a class="header-menu__link" href="#">PROJECTS</a></li>
         <li class="header-menu__item"><a class="header-menu__link" href="#">MEASUREMENT</a> </li>
         <li class="header-menu__item"><a class="header-menu__link" href="#">TEAM </a> </li>
@@ -27,7 +27,7 @@
         <input type="submit" value="Request a call" class="header-form__input">
       </form>
     </header>
-    <div class="main-container">
+    <div class="about-container">
       <aside class="aside">
         <a href="#" class="aside__link">
           <img class="aside__img" src="./assets/img/instagram.png" alt="instagram" width="20px" height="20px">
@@ -39,17 +39,65 @@
         <p class="scroll-down__text"> Scroll down </p>
         <img src="./assets/img/scroll_down.svg" alt="scroll" class="scroll-down__icon">
       </div>
-      <section class="main">
-        <h2 class="main-header">Turnkey Repair in the city of <span class="main-header__city">Rostov-on-Don</span></h2>
-        <p class="main-text">Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
-        <form action="#" class="main-form">
-          <input type="submit" value="CALCULATE THE COST" class="main-form__cost">
-          <input type="submit" value="SUBMIT YOUR APPLICATION" class="main-form__app">
+      <section class="about">
+        <h2 class="about-header">Turnkey Repair in the city of <span class="about-header__city">Rostov-on-Don</span></h2>
+        <p class="about-text">Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from
+          cost of materials due to the organization of work</p>
+        <form action="#" class="about-form">
+          <input type="submit" value="CALCULATE THE COST" class="about-form__cost">
+          <input type="submit" value="SUBMIT YOUR APPLICATION" class="about-form__app">
         </form>
       </section>
     </div>
-    <section class="completed-projects"></section>
-    <section class="video"></section>
+    <section class="completed-projects">
+      <ul class="menu-projects">
+        <li class="menu-projects__item_active"><a href="#" class="menu-projects__link_active">Rostov-on-Don, Admiral</a>
+        </li>
+        <li class="menu-projects__item"><a href="#" class="menu-projects__link">Sochi Thieves</a></li>
+        <li class="menu-projects__item"><a href="#" class="menu-projects__link">Rostov-on-Don Patriotic</a></li>
+      </ul>
+      <div class="projects-info">
+        <div class="main-info">
+          <h2 class="main-info__header">Completed <span class="main-info__header_span">Projects</span></h2>
+          <img src="./assets/img/vector_compl_pr.png" alt="vector" class="main-info__vector">
+          <p class="main-info__text">Only a small part of the work performed by our company is presented on the site.
+            For 14 years on in the construction market we have made happy more than 1000 families </p>
+        </div>
+        <div class="info">
+          <div class="city-info">
+            <h3 class="info__header">City:</h3>
+            <p class="info__text">Rostov-on-Don LCD admiral</p>
+          </div>
+          <div class="area-info">
+            <h3 class="info__header"> apartment area:</h3>
+            <p class="info__text">81 m2</p>
+          </div>
+          <div class="time-info">
+            <h3 class="info__header"> Repair time:</h3>
+            <p class="info__text">3.5 months</p>
+          </div>
+          <div class="cost-info">
+            <h3 class="info__header">Repair Cost:</h3>
+            <p class="info__text">Upon request</p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/img/completed_projects.png" alt="img-design" class="completed-projects__img">
+      <img src="./assets/img/completed_overflow.png" alt="img-design" class="completed-projects__img_over">
+      <img src="./assets/img/completed_pr_button-left.png" alt="button" class="completed-projects__button_left">
+      <img src="./assets/img/completed_pr_button-right.svg" alt="button" class="completed-projects__button_right">
+    </section>
+    <section class="online-control">
+     <div class="container-header">
+       <h2 class="container-header__header">online control</h2>
+       <div class="container-img">
+       <img src="./assets/img/vector-camera.svg" alt="vector" class="container-header__img-vector">
+       <img src="./assets/img/camera.svg" alt="camera" class="container-header__img-camera">
+       <img src="./assets/img/vector-camera.svg" alt="vector" class="container-header__img-vector">
+      </div>
+     </div>
+     <iframe class="online-control__video" width="560" height="315" src="https://www.youtube.com/embed/BOJPznJ3B5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
     <section class="form-connection"></section>
     <section class="types-repair"></section>
     <section class="services"></section>
