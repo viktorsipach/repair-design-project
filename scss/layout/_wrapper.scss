@@ -1,12 +1,22 @@
 .wrapper {
-    width: 1440px;
+    width: 100vw;
     height: 10150px;
     margin: 0 auto;
     background-color: #FFFFFF;
 
-    @media (max-width: 860px) {
-        width: 375px;
+
+    @media (min-width: 1440px) {
+        width:  1440px;
+        height: 10150px;
+        margin: 0 auto;
+       
+    }
+
+    @media (min-width: 320px) and (max-width: 460px) {
+        width: 100vw;
         height: 8796px;
+        margin: 0 auto;
+       
     }
 }
 

@@ -1,16 +1,4 @@
-@font-face {
-    font-family: "Yeseva One"; 
-    src: url("../assets/fonts/YesevaOne.woff2") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-    } 
 
- @font-face {
-    font-family: "FuturaBookC"; 
-    src: url("../assets/fonts/FuturaBookC.woff2") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-} 
 
 .about-container {
     width: 100%;
@@ -19,7 +7,7 @@
     display: flex;
     position: relative;
 
-    @media (max-width: 860px) {
+    @media (max-width: 460px) {
        width: 100%;
        height: 6%;
        margin-bottom: 0;
@@ -36,7 +24,7 @@
     background-size: cover;
    
 
-    @media (max-width: 860px) {
+    @media (max-width: 460px) {
         width: 100%;
         height: 100%;
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../assets/img/image4.7.png");
@@ -50,10 +38,8 @@
   margin-bottom: 1%;
   margin-left: 4%;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 53px;
+  font-size: 4rem;
+  line-height: 5.3rem;
   text-transform: uppercase;
   color: #FFFFFF;
 
@@ -61,10 +47,10 @@
     color: #E3B873;
   }
 
-  @media (max-width: 860px) {
+  @media (max-width: 460px) {
     width: 90%;
-    font-size: 23px;
-    line-height: 31px;
+    font-size: 2.3rem;
+    line-height: 3.1rem;
     margin-bottom: 4%;
    
  }
@@ -75,14 +61,14 @@
   margin-left: 4%;
   margin-bottom: 5%;
   font-family: "FuturaBookC";
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 2.2rem;
+  line-height: 3rem;
   color: #FFFFFF;
 
-  @media (max-width: 860px) {
+  @media (max-width: 460px) {
     width: 82%;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
     margin-bottom: 13%;
    
  }
@@ -95,7 +81,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 860px) {
+    @media (max-width: 460px) {
         width: 92%;
         height: 30%;
         display: flex;
@@ -104,8 +90,8 @@
 
     &__cost {
     font-family: FuturaDemiC;
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
     text-align: center;
     color: #FFFFFF;
     background: #E3B873;
@@ -113,7 +99,7 @@
     border-radius: 2px;
     border: 0;
 
-    @media (max-width: 860px) {
+    @media (max-width: 460px) {
         height: 40%;
         border-radius: 0;
     }
@@ -127,8 +113,8 @@
 
     &__app {
     font-family: "FuturaDemiC";
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
     text-align: center;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
@@ -136,7 +122,7 @@
     box-sizing: border-box;
     border-radius: 2px;
 
-    @media (max-width: 860px) {
+    @media (max-width: 460px) {
         height: 40%;
         border-radius: 0;
     }
@@ -172,6 +158,7 @@
         position: absolute;
         top: 50%;
         font-family: "FuturaDemiC", serif;
+        font-size: 1.6rem;
         color: #E3B873;
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
@@ -188,7 +175,7 @@
         color: #E3B873;
     }
 
-    @media (max-width: 860px) {
+    @media (max-width: 460px) {
         display: none;
     }
 }
@@ -207,8 +194,8 @@
       font-family: "Yeseva One";
       font-style: normal;
       font-weight: normal;
-      font-size: 14px;
-      line-height: 19px;
+      font-size: 1.4rem;
+      line-height: 1.9rem;
       text-transform: uppercase;
       color: #FFFFFF;
     }
@@ -218,7 +205,7 @@
         cursor: pointer;
     }
 
-    @media (max-width: 860px) {
+    @media (max-width: 460px) {
         display: none;
     }
 }
