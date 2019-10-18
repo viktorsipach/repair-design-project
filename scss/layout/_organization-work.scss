@@ -9,11 +9,16 @@
         width: max-content;
         height: max-content;
         align-self: flex-end;
+
+        @media (max-width: 1260px) {
+            width: 50%;
+            height: 40%;
+         }
     }
 
 
 
-    @media (max-width: 460px) {
+    @media (max-width: 760px) {
        display: none;
     }
 }
@@ -29,7 +34,7 @@
         grid-template-rows: auto auto;
 
         &__header_active {
-            font-family: Yeseva One;
+            font-family: Yeseva One, serif;
             font-size: 1.5rem;
             line-height: 2.1rem;
             text-transform: uppercase;
@@ -55,7 +60,7 @@
         }
 
         &__text {
-            font-family: FuturaBookC;
+            font-family: FuturaBookC, serif;
             font-size: 1.5rem;
             line-height: 1.8rem;
             color: #FFFFFF;
@@ -72,7 +77,7 @@
     flex-direction: column;
 
     &__intro {
-        font-family: FuturaDemiC;
+        font-family: FuturaDemiC, serif;
         font-size: 1.5rem;
         line-height: 2.1rem;
         text-transform: uppercase;
@@ -83,11 +88,15 @@
     &__main-header {
         width: 30%;
         margin-bottom: 10%;
-        font-family: Yeseva One;
+        font-family: Yeseva One, serif;
         font-size: 2.7rem;
         line-height: 3.7rem;
         text-transform: uppercase;
         color: #E3B873;
+
+        @media (max-width: 1260px) {
+            width: 174%;
+         }
     }
 
 
@@ -95,11 +104,15 @@
         position: absolute;
         top: 12%;
         left: 19%;
+
+        @media (max-width: 1260px) {
+            display: none;
+         }
     }
 
     &__count-steps {
         margin-bottom: 3%;
-        font-family: Yeseva One;
+        font-family: Yeseva One, serif;
         font-size: 1.8rem;
         line-height: 2.5rem;
         text-transform: uppercase;
@@ -109,7 +122,7 @@
     &__header {
         width: 34%;
         margin-bottom: 2%;
-        font-family: Yeseva One;
+        font-family: Yeseva One, serif;
         font-size: 1.5rem;
         line-height: 2.3rem;
         text-transform: uppercase;
@@ -119,12 +132,15 @@
     &__text {
         width: 52%;
         margin-bottom: 15%;
-        font-family: FuturaBookC;
+        font-family: FuturaBookC, serif;
         font-size: 1.5rem;
         line-height: 2.5rem;
         color: #FFFFFF;
-
     }
+
+    @media (max-width: 1260px) {
+        margin-top: 5%;
+     }
 }
 
 .slider {
@@ -140,4 +156,11 @@
         cursor: pointer;
         opacity: 0.4;
    }
+
+   @media (max-width: 1260px) {
+    width: 36%;
+    position: absolute;
+    top: 45%;
+    left: 55%;
+ }
 }

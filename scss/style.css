@@ -41,7 +41,15 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 460px) {
+@media (max-width: 760px) {
+  .wrapper {
+    width: 100vw;
+    height: 8796px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1360px) {
   .wrapper {
     width: 100vw;
     height: 8796px;
@@ -68,7 +76,7 @@ html {
   background-color: #131313;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .header {
     width: 100%;
     height: 0.65%;
@@ -89,7 +97,7 @@ html {
   color: #E3B873;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .logo {
     margin-right: 5%;
     margin-left: 0;
@@ -132,7 +140,13 @@ html {
   color: #E3B873;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
+  .header-navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 1260px) {
   .header-navbar {
     display: none;
   }
@@ -153,7 +167,13 @@ html {
   cursor: pointer;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .header-phone {
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 760px) {
   .header-phone {
     margin-left: 10%;
     font-size: 1.2rem;
@@ -191,7 +211,14 @@ html {
   background: rgba(227, 184, 115, 0.7);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .header-form {
+    width: 20%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 760px) {
   .header-form {
     display: none;
   }
@@ -207,7 +234,7 @@ html {
   position: relative;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .about-container {
     width: 100%;
     height: 6%;
@@ -228,12 +255,19 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../assets/img/image4.3.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/img/image4.3.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../assets/img/image4.3.jpg");
   background-size: cover;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .about {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 760px) {
   .about {
     width: 100%;
     height: 100%;
@@ -248,7 +282,7 @@ html {
   margin-top: 3%;
   margin-bottom: 1%;
   margin-left: 4%;
-  font-family: "Yeseva One";
+  font-family: "Yeseva One", serif;
   font-size: 4rem;
   line-height: 5.3rem;
   text-transform: uppercase;
@@ -259,9 +293,20 @@ html {
   color: #E3B873;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .about-header {
+    width: 68%;
+    height: 30%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media (max-width: 760px) {
   .about-header {
     width: 90%;
+    height: 12%;
     font-size: 2.3rem;
     line-height: 3.1rem;
     margin-bottom: 4%;
@@ -272,18 +317,33 @@ html {
   width: 31%;
   margin-left: 4%;
   margin-bottom: 5%;
-  font-family: "FuturaBookC";
+  font-family: "FuturaBookC", serif;
   font-size: 2.2rem;
   line-height: 3rem;
   color: #FFFFFF;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
   .about-text {
-    width: 82%;
+    width: 54%;
+    height: 20%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .about-text {
+    width: 76%;
+    height: 14%;
     font-size: 1.8rem;
     line-height: 2.4rem;
     margin-bottom: 13%;
+    margin-left: 7%;
+    -ms-flex-item-align: normal;
+        -ms-grid-row-align: normal;
+        align-self: normal;
   }
 }
 
@@ -299,10 +359,25 @@ html {
           justify-content: space-between;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
   .about-form {
-    width: 92%;
+    width: 60%;
+    height: 7%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .about-form {
+    width: 100%;
     height: 30%;
+    margin-left: 10%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -314,7 +389,7 @@ html {
 }
 
 .about-form__cost {
-  font-family: FuturaDemiC;
+  font-family: FuturaDemiC, serif;
   font-size: 1.3rem;
   line-height: 1.5rem;
   text-align: center;
@@ -326,10 +401,20 @@ html {
   border: 0;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
   .about-form__cost {
-    height: 40%;
+    width: 90%;
+    margin-right: 15%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .about-form__cost {
+    height: 32%;
     border-radius: 0;
+    margin-bottom: 10%;
+    margin-top: 4%;
   }
 }
 
@@ -339,7 +424,7 @@ html {
 }
 
 .about-form__app {
-  font-family: "FuturaDemiC";
+  font-family: "FuturaDemiC", serif;
   font-size: 1.3rem;
   line-height: 1.5rem;
   text-align: center;
@@ -351,9 +436,16 @@ html {
   border-radius: 2px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
   .about-form__app {
-    height: 40%;
+    width: 90%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .about-form__app {
+    height: 32%;
     border-radius: 0;
   }
 }
@@ -368,6 +460,12 @@ html {
   height: 96%;
   position: relative;
   background-color: #131313;
+}
+
+@media (max-width: 1260px) {
+  .aside {
+    display: none;
+  }
 }
 
 .aside__img {
@@ -403,7 +501,7 @@ html {
   color: #E3B873;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .aside {
     display: none;
   }
@@ -440,7 +538,14 @@ html {
   cursor: pointer;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .scroll-down {
+    width: 35%;
+    height: 10%;
+  }
+}
+
+@media (max-width: 760px) {
   .scroll-down {
     display: none;
   }
@@ -460,7 +565,7 @@ html {
   left: 42.5%;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .completed-projects__img {
     display: none;
   }
@@ -472,7 +577,7 @@ html {
   left: 91%;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .completed-projects__img_over {
     width: 92%;
     position: absolute;
@@ -485,13 +590,13 @@ html {
   display: none;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .completed-projects__button_left {
     width: 9%;
     display: inline-block;
     position: absolute;
     left: 8%;
-    top: 50%;
+    top: 46%;
   }
 }
 
@@ -507,16 +612,16 @@ html {
   cursor: pointer;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .completed-projects__button_right {
     width: 9%;
     position: absolute;
     right: 8%;
-    top: 50%;
+    top: 46%;
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .completed-projects {
     width: 100%;
     height: 8%;
@@ -537,7 +642,7 @@ html {
 }
 
 .menu-projects__link_active {
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.4rem;
   line-height: 1.9rem;
   text-transform: uppercase;
@@ -550,7 +655,7 @@ html {
 }
 
 .menu-projects__link {
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.4rem;
   line-height: 1.9rem;
   text-transform: uppercase;
@@ -563,7 +668,7 @@ html {
   text-decoration: underline;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .menu-projects {
     display: none;
   }
@@ -584,6 +689,12 @@ html {
           flex-direction: column;
 }
 
+@media (max-width: 1260px) {
+  .projects-info {
+    top: 8%;
+  }
+}
+
 .main-info {
   width: 100%;
   height: 65%;
@@ -592,7 +703,7 @@ html {
 
 .main-info__header {
   width: 40%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 2.7rem;
   line-height: 3.7rem;
   letter-spacing: -0.07em;
@@ -600,10 +711,10 @@ html {
   color: #E3B873;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .main-info__header {
     position: absolute;
-    bottom: 175%;
+    bottom: 96%;
     left: 90%;
     font-size: 2.2rem;
     line-height: 138.6%;
@@ -621,7 +732,13 @@ html {
   top: 34%;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .main-info__vector {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
   .main-info__vector {
     display: none;
   }
@@ -629,17 +746,17 @@ html {
 
 .main-info__text {
   margin-top: 6%;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.8rem;
   line-height: 2.9rem;
   color: #FFFFFF;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .main-info__text {
     width: 279%;
     position: absolute;
-    bottom: 87%;
+    bottom: 13%;
     font-size: 1.4rem;
     line-height: 158.48%;
     text-align: center;
@@ -656,15 +773,21 @@ html {
   grid-row-gap: 28%;
 }
 
+@media (max-width: 1260px) {
+  .info {
+    margin-top: 80%;
+  }
+}
+
 .info__header {
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
   text-transform: uppercase;
   color: #E3B873;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .info__header {
     font-size: 1.4rem;
     line-height: 138.6%;
@@ -678,19 +801,19 @@ html {
   color: #FFFFFF;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .info__text {
     font-size: 1.4rem;
     line-height: 1.9rem;
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .info {
     width: 279%;
     position: absolute;
     left: -10%;
-    bottom: -78%;
+    bottom: -127%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto;
@@ -721,7 +844,7 @@ html {
 
 .online-control__header {
   margin-bottom: 1%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.9rem;
   line-height: 2.7rem;
   text-align: center;
@@ -729,7 +852,7 @@ html {
   color: #FFFFFF;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .online-control__header {
     margin-bottom: 3%;
     font-size: 2.2rem;
@@ -742,7 +865,7 @@ html {
           box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .online-control__video {
     width: 92%;
     height: 60%;
@@ -753,13 +876,13 @@ html {
   margin-bottom: 2%;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .online-control__icon {
     margin-bottom: 7%;
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .online-control {
     width: 100%;
     height: 4%;
@@ -787,7 +910,7 @@ html {
   margin-bottom: 3%;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .form-connection__vector {
     margin-bottom: 5%;
   }
@@ -797,14 +920,21 @@ html {
   width: 47%;
   height: 30%;
   margin-bottom: 4%;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 2rem;
   line-height: 3.4rem;
   text-align: center;
   color: #363636;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .form-connection__text {
+    width: 67%;
+    height: 40%;
+  }
+}
+
+@media (max-width: 760px) {
   .form-connection__text {
     width: 92%;
     height: 25%;
@@ -815,7 +945,7 @@ html {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .form-connection {
     width: 100%;
     height: 6%;
@@ -836,7 +966,14 @@ html {
       flex-wrap: wrap;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .form {
+    width: 67%;
+    height: 17%;
+  }
+}
+
+@media (max-width: 760px) {
   .form {
     width: 100%;
     height: 56%;
@@ -867,7 +1004,7 @@ html {
   color: rgba(54, 54, 54, 0.5);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .form-name__name {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -878,13 +1015,13 @@ html {
 }
 
 .form-name__text {
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.8rem;
   line-height: 2.4rem;
   color: #363636;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .form-name__text {
     font-size: 1.8rem;
     line-height: 138.72%;
@@ -892,14 +1029,14 @@ html {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .form-name__input {
     width: 92%;
     height: 20%;
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .form-name {
     width: 99%;
     height: 33%;
@@ -912,13 +1049,13 @@ html {
 }
 
 .form-phone__name {
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.5rem;
   line-height: 2rem;
   color: rgba(54, 54, 54, 0.5);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .form-phone__name {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -929,13 +1066,13 @@ html {
 }
 
 .form-phone__text {
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.8rem;
   line-height: 2.4rem;
   color: #363636;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .form-phone__text {
     font-size: 1.8rem;
     line-height: 138.72%;
@@ -943,14 +1080,14 @@ html {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .form-phone__input {
     width: 92%;
     height: 20%;
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .form-phone {
     width: 99%;
     height: 33%;
@@ -964,7 +1101,7 @@ html {
   width: 20%;
   height: 60%;
   margin-top: 3.5%;
-  font-family: FuturaDemiC;
+  font-family: FuturaDemiC, serif;
   font-size: 1.5rem;
   line-height: 2.6rem;
   text-align: center;
@@ -982,10 +1119,16 @@ html {
   background: rgba(227, 184, 115, 0.8);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .form-submit {
+    height: 45%;
+  }
+}
+
+@media (max-width: 760px) {
   .form-submit {
     width: 92%;
-    height: 20%;
+    height: 17%;
     top: 100%;
     position: absolute;
     border-radius: 0;
@@ -1000,7 +1143,7 @@ html {
   position: absolute;
   left: 33%;
   top: 150%;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.6rem;
   line-height: 2.2rem;
   color: #181818;
@@ -1030,7 +1173,13 @@ html {
   line-height: 1.5rem;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .form-checkbox {
+    width: 57%;
+  }
+}
+
+@media (max-width: 760px) {
   .form-checkbox {
     width: 99%;
     height: 7%;
@@ -1061,7 +1210,7 @@ html {
   height: -moz-max-content;
   height: max-content;
   margin-bottom: 1%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 2rem;
@@ -1071,7 +1220,7 @@ html {
   color: #181818;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .types-repair__header {
     margin-bottom: 6%;
     font-size: 22px;
@@ -1080,10 +1229,15 @@ html {
 }
 
 .types-repair__icon {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 3%;
   margin-bottom: 2%;
+}
+
+@media (max-width: 760px) {
+  .types-repair__icon {
+    height: 2%;
+    margin-bottom: 2%;
+  }
 }
 
 .types-repair__container {
@@ -1093,7 +1247,7 @@ html {
   display: flex;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .types-repair__container {
     height: 91%;
     display: -webkit-box;
@@ -1106,7 +1260,7 @@ html {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .types-repair {
     width: 100%;
     height: 20%;
@@ -1155,15 +1309,23 @@ html {
           box-shadow: 10px 10px 2rem rgba(0, 0, 0, 0.03);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .redecorating__container {
+    height: 45%;
+    top: 25%;
+  }
+}
+
+@media (max-width: 760px) {
   .redecorating__container {
     height: 53%;
+    top: 45%;
   }
 }
 
 .redecorating__header {
   margin-left: 6%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
   color: #363636;
@@ -1171,7 +1333,7 @@ html {
 
 .redecorating__list {
   margin-left: 7%;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: #959595;
@@ -1193,7 +1355,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -1206,7 +1368,13 @@ html {
   border: 0;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .redecorating__price {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 760px) {
   .redecorating {
     width: 90%;
     height: 32%;
@@ -1251,15 +1419,23 @@ html {
           box-shadow: 10px 10px 2rem rgba(0, 0, 0, 0.03);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .overhaul__container {
+    height: 45%;
+    top: 25%;
+  }
+}
+
+@media (max-width: 760px) {
   .overhaul__container {
     height: 53%;
+    top: 45%;
   }
 }
 
 .overhaul__header {
   margin-left: 6%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -1269,7 +1445,7 @@ html {
 
 .overhaul__list {
   margin-left: 7%;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: #959595;
@@ -1291,7 +1467,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -1304,7 +1480,13 @@ html {
   border: 0;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .overhaul__price {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 760px) {
   .overhaul {
     width: 90%;
     height: 32%;
@@ -1348,15 +1530,23 @@ html {
           box-shadow: 10px 10px 2rem rgba(0, 0, 0, 0.03);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .designer-repair__container {
+    height: 45%;
+    top: 25%;
+  }
+}
+
+@media (max-width: 760px) {
   .designer-repair__container {
     height: 53%;
+    top: 45%;
   }
 }
 
 .designer-repair__header {
   margin-left: 6%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -1366,7 +1556,7 @@ html {
 
 .designer-repair__list {
   margin-left: 7%;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: #959595;
@@ -1388,7 +1578,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -1401,7 +1591,13 @@ html {
   border: 0;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .designer-repair__price {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 760px) {
   .designer-repair {
     width: 90%;
     height: 32%;
@@ -1425,19 +1621,31 @@ html {
   right: 25%;
 }
 
+@media (max-width: 1260px) {
+  .services__icon {
+    display: none;
+  }
+}
+
 .services__discount {
   width: 16%;
   position: absolute;
   bottom: 13%;
   right: 9%;
-  font-family: FuturaDemiC;
+  font-family: FuturaDemiC, serif;
   font-size: 2rem;
   line-height: 2.5rem;
   color: #E3B873;
   text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .services__discount {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
   .services {
     display: none;
   }
@@ -1451,6 +1659,14 @@ html {
   top: 6%;
   border: 2px solid #E3B873;
   border-radius: 50%;
+}
+
+@media (max-width: 1260px) {
+  .circle {
+    height: 62%;
+    width: 53%;
+    top: 12%;
+  }
 }
 
 .circle-small-1 {
@@ -1468,13 +1684,20 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
   text-align: center;
   color: #FFFFFF;
   background-color: #E3B873;
   border-radius: 50%;
+}
+
+@media (max-width: 1260px) {
+  .circle-small-1 {
+    width: 5%;
+    left: 18%;
+  }
 }
 
 .circle-small-2 {
@@ -1492,13 +1715,19 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
   text-align: center;
   color: #FFFFFF;
   background-color: #E3B873;
   border-radius: 50%;
+}
+
+@media (max-width: 1260px) {
+  .circle-small-2 {
+    width: 5%;
+  }
 }
 
 .circle-small-3 {
@@ -1516,7 +1745,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -1525,6 +1754,12 @@ html {
   color: #FFFFFF;
   background-color: #E3B873;
   border-radius: 50%;
+}
+
+@media (max-width: 1260px) {
+  .circle-small-3 {
+    width: 5%;
+  }
 }
 
 .circle-small-4 {
@@ -1542,7 +1777,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -1553,15 +1788,30 @@ html {
   border-radius: 50%;
 }
 
+@media (max-width: 1260px) {
+  .circle-small-4 {
+    width: 5%;
+    left: 19%;
+  }
+}
+
 .text-01 {
   width: 29%;
   position: absolute;
   top: 14%;
   left: 28%;
-  font-family: FuturaMediumC;
+  font-family: FuturaMediumC, serif;
   font-size: 1.8rem;
   line-height: 2.1rem;
   color: #363636;
+}
+
+@media (max-width: 1260px) {
+  .text-01 {
+    width: 32%;
+    left: 26%;
+    top: 11%;
+  }
 }
 
 .text-02 {
@@ -1569,10 +1819,17 @@ html {
   position: absolute;
   top: 31%;
   left: 34%;
-  font-family: FuturaMediumC;
+  font-family: FuturaMediumC, serif;
   font-size: 1.8rem;
   line-height: 2.1rem;
   color: #363636;
+}
+
+@media (max-width: 1260px) {
+  .text-02 {
+    left: 37%;
+    top: 30%;
+  }
 }
 
 .text-03 {
@@ -1580,10 +1837,17 @@ html {
   position: absolute;
   top: 48%;
   left: 35.5%;
-  font-family: FuturaMediumC;
+  font-family: FuturaMediumC, serif;
   font-size: 1.8rem;
   line-height: 2.1rem;
   color: #363636;
+}
+
+@media (max-width: 1260px) {
+  .text-03 {
+    left: 38%;
+    top: 47%;
+  }
 }
 
 .text-04 {
@@ -1591,10 +1855,18 @@ html {
   position: absolute;
   top: 67%;
   left: 31%;
-  font-family: FuturaMediumC;
+  font-family: FuturaMediumC, serif;
   font-size: 1.8rem;
   line-height: 2.1rem;
   color: #363636;
+}
+
+@media (max-width: 1260px) {
+  .text-04 {
+    left: 27%;
+    top: 68%;
+    width: 21%;
+  }
 }
 
 .form-services {
@@ -1611,6 +1883,14 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #131313;
+}
+
+@media (max-width: 1260px) {
+  .form-services {
+    width: 40%;
+    height: 70%;
+    right: 0;
+  }
 }
 
 .form-services__text {
@@ -1640,7 +1920,7 @@ html {
 }
 
 .form-services-name__text {
-  font-family: FuturaMediumC;
+  font-family: FuturaMediumC, serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
   color: #FFFFFF;
@@ -1664,7 +1944,7 @@ html {
 }
 
 .form-services-phone__text {
-  font-family: FuturaMediumC;
+  font-family: FuturaMediumC, serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
   color: #FFFFFF;
@@ -1688,7 +1968,7 @@ html {
 }
 
 .form-services-email__text {
-  font-family: FuturaMediumC;
+  font-family: FuturaMediumC, serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
   color: #FFFFFF;
@@ -1704,7 +1984,7 @@ html {
   display: flex;
   margin-left: 14%;
   margin-top: 5%;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.6rem;
   line-height: 2.2rem;
   color: #FFFFFF;
@@ -1734,13 +2014,22 @@ html {
   text-align: center;
 }
 
+@media (max-width: 1260px) {
+  .form-services-checkbox {
+    width: 100%;
+    height: 0%;
+    margin-left: 11%;
+    margin-bottom: 0%;
+  }
+}
+
 .form-services-submit {
   width: 35%;
   height: 7%;
   position: absolute;
   right: 10%;
   bottom: 8%;
-  font-family: FuturaDemiC;
+  font-family: FuturaDemiC, serif;
   font-size: 1.3rem;
   line-height: 1.8rem;
   text-align: center;
@@ -1755,6 +2044,12 @@ html {
 .form-services-submit:hover {
   cursor: pointer;
   background: rgba(227, 184, 115, 0.8);
+}
+
+@media (max-width: 1260px) {
+  .form-services-submit {
+    width: 50%;
+  }
 }
 
 .types-design {
@@ -1774,17 +2069,30 @@ html {
 .types-design__header {
   width: 100%;
   margin-bottom: 10%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 2.7rem;
   line-height: 3.7rem;
   text-transform: uppercase;
   color: #E3B873;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .types-design {
     width: 100%;
     height: 4%;
+    position: relative;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(62%, #FFFFFF), color-stop(50%, #131313));
+    background: linear-gradient(to bottom, #FFFFFF 62%, #131313 50%);
+  }
+  .types-design::before {
+    content: "We realize your wildest fantasies";
+    width: 62%;
+    height: 30%;
+    font-family: Yeseva One, serif;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: #E3B873;
   }
 }
 
@@ -1794,9 +2102,33 @@ html {
 }
 
 .container-img__clock {
+  width: 43%;
+  height: 62%;
   position: absolute;
   top: -3%;
   left: 10%;
+}
+
+@media (max-width: 1260px) {
+  .container-img__clock {
+    height: 40%;
+    top: 10%;
+    left: 0%;
+  }
+}
+
+@media (max-width: 760px) {
+  .container-img__clock {
+    width: 92%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 4%;
+    margin: 0;
+  }
 }
 
 .container-img__sofa {
@@ -1805,16 +2137,98 @@ html {
   left: 58%;
 }
 
+@media (max-width: 1260px) {
+  .container-img__sofa {
+    width: 45%;
+    top: 7%;
+    height: 26%;
+    left: 49%;
+  }
+}
+
+@media (max-width: 760px) {
+  .container-img__sofa {
+    display: none;
+  }
+}
+
 .container-img__telly {
   position: absolute;
   bottom: -2%;
   left: 10%;
 }
 
+@media (max-width: 1260px) {
+  .container-img__telly {
+    width: 43%;
+    top: 64%;
+    left: 0%;
+  }
+}
+
+@media (max-width: 760px) {
+  .container-img__telly {
+    display: none;
+  }
+}
+
 .container-img__table {
   position: absolute;
   bottom: 3%;
   left: 58%;
+}
+
+@media (max-width: 1260px) {
+  .container-img__table {
+    width: 45%;
+    bottom: 11%;
+    left: 50%;
+  }
+}
+
+@media (max-width: 760px) {
+  .container-img__table {
+    display: none;
+  }
+}
+
+.container-img__button-left {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .container-img__button-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 4%;
+    top: 33%;
+  }
+}
+
+.container-img__button-right {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .container-img__button-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 4%;
+    top: 33%;
+  }
+}
+
+@media (max-width: 760px) {
+  .container-img {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .types-design-nav {
@@ -1824,14 +2238,14 @@ html {
 }
 
 .types-design-nav__link_active {
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.8rem;
   line-height: 3.4rem;
   color: #E3B873;
 }
 
 .types-design-nav__link {
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.8rem;
   line-height: 3.4rem;
   color: #FFFFFF;
@@ -1845,6 +2259,19 @@ html {
 
 .types-design-nav__item {
   margin-bottom: 5%;
+}
+
+@media (max-width: 1260px) {
+  .types-design-nav {
+    margin-top: 10%;
+    width: 30%;
+  }
+}
+
+@media (max-width: 760px) {
+  .types-design-nav {
+    display: none;
+  }
 }
 
 .design-projects {
@@ -1867,7 +2294,7 @@ html {
   height: max-content;
   margin-bottom: 1%;
   margin-top: 8%;
-  font-family: Yeseva One;
+  font-family: Yeseva One ,serif;
   font-style: normal;
   font-weight: normal;
   font-size: 2rem;
@@ -1877,19 +2304,25 @@ html {
   color: #181818;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .design-projects__header {
-    margin-bottom: 6%;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    margin-bottom: 3%;
+    color: #FFFFFF;
   }
 }
 
 .design-projects__icon {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 3%;
   margin-bottom: 2%;
+}
+
+@media (max-width: 760px) {
+  .design-projects__icon {
+    height: 2%;
+    margin-bottom: 2%;
+  }
 }
 
 .design-projects__description {
@@ -1898,11 +2331,30 @@ html {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC,serif;
   font-size: 2rem;
   line-height: 2.7rem;
   text-align: center;
   color: #363636;
+}
+
+@media (max-width: 1260px) {
+  .design-projects__description {
+    width: 60%;
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 760px) {
+  .design-projects__description {
+    width: 75%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+  }
 }
 
 .design-projects__container {
@@ -1912,7 +2364,7 @@ html {
   display: flex;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .design-projects__container {
     height: 91%;
     display: -webkit-box;
@@ -1925,11 +2377,18 @@ html {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .design-projects {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(47%, #FFFFFF), color-stop(30%, #131313));
+    background: linear-gradient(to bottom, #FFFFFF 47%, #131313 30%);
+    height: 9%;
+  }
+}
+
+@media (max-width: 760px) {
   .design-projects {
     width: 100%;
     height: 20%;
-    margin-top: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1969,21 +2428,28 @@ html {
   width: 86%;
   height: 23%;
   position: absolute;
-  top: 46%;
+  top: 36%;
   background-color: #FFFFFF;
   -webkit-box-shadow: 10px 10px 2rem rgba(0, 0, 0, 0.03);
           box-shadow: 10px 10px 2rem rgba(0, 0, 0, 0.03);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .mini__container {
+    top: 17%;
+  }
+}
+
+@media (max-width: 760px) {
   .mini__container {
     height: 53%;
+    top: 45%;
   }
 }
 
 .mini__header {
   margin-left: 6%;
-  font-family: Yeseva One;
+  font-family: Yeseva One,serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -2015,7 +2481,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Yeseva One;
+  font-family: Yeseva One,serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -2028,10 +2494,22 @@ html {
   border: 0;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .mini__price {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1260px) {
+  .mini {
+    height: 150%;
+  }
+}
+
+@media (max-width: 760px) {
   .mini {
     width: 90%;
-    height: 32%;
+    height: 36%;
     margin-top: 6%;
     margin-left: 5%;
     margin-right: 3%;
@@ -2067,21 +2545,28 @@ html {
   width: 86%;
   height: 28%;
   position: absolute;
-  top: 46%;
+  top: 36%;
   background-color: #FFFFFF;
   -webkit-box-shadow: 10px 10px 2rem rgba(0, 0, 0, 0.03);
           box-shadow: 10px 10px 2rem rgba(0, 0, 0, 0.03);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
   .standard__container {
-    height: 53%;
+    top: 17%;
+  }
+}
+
+@media (max-width: 760px) {
+  .standard__container {
+    height: 55%;
+    top: 45%;
   }
 }
 
 .standard__header {
   margin-left: 6%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -2091,7 +2576,7 @@ html {
 
 .standard__list {
   margin-left: 7%;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: #959595;
@@ -2113,7 +2598,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -2126,10 +2611,22 @@ html {
   border: 0;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .standard__price {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1260px) {
+  .standard {
+    height: 150%;
+  }
+}
+
+@media (max-width: 760px) {
   .standard {
     width: 90%;
-    height: 32%;
+    height: 38%;
     margin-left: 5%;
     margin-right: 3%;
     margin-bottom: 15%;
@@ -2164,21 +2661,28 @@ html {
   width: 86%;
   height: 45%;
   position: absolute;
-  top: 46%;
+  top: 36%;
   background-color: #FFFFFF;
   -webkit-box-shadow: 10px 10px 2rem rgba(0, 0, 0, 0.03);
           box-shadow: 10px 10px 2rem rgba(0, 0, 0, 0.03);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
   .full__container {
-    height: 53%;
+    top: 17%;
+  }
+}
+
+@media (max-width: 760px) {
+  .full__container {
+    height: 65%;
+    top: 32%;
   }
 }
 
 .full__header {
   margin-left: 6%;
-  font-family: Yeseva One;
+  font-family: Yeseva One,serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -2188,7 +2692,7 @@ html {
 
 .full__list {
   margin-left: 7%;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC,serif;
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: #959595;
@@ -2210,7 +2714,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Yeseva One;
+  font-family: Yeseva One,serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -2223,13 +2727,26 @@ html {
   border: 0;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .full__price {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1260px) {
+  .full {
+    height: 155%;
+  }
+}
+
+@media (max-width: 760px) {
   .full {
     width: 90%;
-    height: 32%;
+    height: 52%;
+    display: block;
+    margin-bottom: 15%;
     margin-left: 5%;
     margin-right: 3%;
-    display: block;
   }
 }
 
@@ -2254,7 +2771,14 @@ html {
       align-self: flex-end;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .organization-work__img {
+    width: 50%;
+    height: 40%;
+  }
+}
+
+@media (max-width: 760px) {
   .organization-work {
     display: none;
   }
@@ -2275,7 +2799,7 @@ html {
 }
 
 .steps__header_active {
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.5rem;
   line-height: 2.1rem;
   text-transform: uppercase;
@@ -2302,7 +2826,7 @@ html {
 }
 
 .steps__text {
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.5rem;
   line-height: 1.8rem;
   color: #FFFFFF;
@@ -2322,7 +2846,7 @@ html {
 }
 
 .description__intro {
-  font-family: FuturaDemiC;
+  font-family: FuturaDemiC, serif;
   font-size: 1.5rem;
   line-height: 2.1rem;
   text-transform: uppercase;
@@ -2332,11 +2856,17 @@ html {
 .description__main-header {
   width: 30%;
   margin-bottom: 10%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 2.7rem;
   line-height: 3.7rem;
   text-transform: uppercase;
   color: #E3B873;
+}
+
+@media (max-width: 1260px) {
+  .description__main-header {
+    width: 174%;
+  }
 }
 
 .description__vector {
@@ -2345,9 +2875,15 @@ html {
   left: 19%;
 }
 
+@media (max-width: 1260px) {
+  .description__vector {
+    display: none;
+  }
+}
+
 .description__count-steps {
   margin-bottom: 3%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
   text-transform: uppercase;
@@ -2357,7 +2893,7 @@ html {
 .description__header {
   width: 34%;
   margin-bottom: 2%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.5rem;
   line-height: 2.3rem;
   text-transform: uppercase;
@@ -2367,10 +2903,16 @@ html {
 .description__text {
   width: 52%;
   margin-bottom: 15%;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: #FFFFFF;
+}
+
+@media (max-width: 1260px) {
+  .description {
+    margin-top: 5%;
+  }
 }
 
 .slider {
@@ -2389,6 +2931,15 @@ html {
 .slider__arrow:hover {
   cursor: pointer;
   opacity: 0.4;
+}
+
+@media (max-width: 1260px) {
+  .slider {
+    width: 36%;
+    position: absolute;
+    top: 45%;
+    left: 55%;
+  }
 }
 
 .our-team {
@@ -2411,7 +2962,7 @@ html {
   height: max-content;
   margin-top: 5%;
   margin-bottom: 1%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 2rem;
   line-height: 2.8rem;
   text-align: center;
@@ -2419,19 +2970,31 @@ html {
   color: #FFFFFF;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
   .our-team__header {
-    margin-bottom: 6%;
-    font-size: 22px;
-    line-height: 30px;
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 760px) {
+  .our-team__header {
+    margin-top: 0;
+    margin-bottom: 3%;
+    font-size: 2.2rem;
+    line-height: 3rem;
   }
 }
 
 .our-team__icon {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 3%;
   margin-bottom: 2%;
+}
+
+@media (max-width: 760px) {
+  .our-team__icon {
+    height: 2%;
+    margin-bottom: 2%;
+  }
 }
 
 .our-team__description {
@@ -2440,11 +3003,29 @@ html {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 2rem;
   line-height: 2.7rem;
   text-align: center;
   color: #FFFFFF;
+}
+
+@media (max-width: 1260px) {
+  .our-team__description {
+    width: 51%;
+  }
+}
+
+@media (max-width: 760px) {
+  .our-team__description {
+    width: 72%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-bottom: 1%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 .our-team__experience {
@@ -2453,15 +3034,48 @@ html {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 2rem;
   line-height: 3.4rem;
   text-align: center;
   color: #363636;
 }
 
+@media (max-width: 1260px) {
+  .our-team__experience {
+    width: 64%;
+    position: absolute;
+    top: 68%;
+  }
+}
+
+@media (max-width: 760px) {
+  .our-team__experience {
+    display: none;
+  }
+}
+
 .our-team__vector {
+  height: 1%;
+  width: 4%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-bottom: 3%;
+}
+
+@media (max-width: 1260px) {
+  .our-team__vector {
+    width: 9%;
+    position: absolute;
+    top: 64%;
+  }
+}
+
+@media (max-width: 760px) {
+  .our-team__vector {
+    display: none;
+  }
 }
 
 .our-team__container {
@@ -2472,7 +3086,7 @@ html {
   display: flex;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .our-team__container {
     height: 91%;
     display: -webkit-box;
@@ -2485,11 +3099,16 @@ html {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .our-team {
+    position: relative;
+  }
+}
+
+@media (max-width: 760px) {
   .our-team {
     width: 100%;
     height: 20%;
-    margin-top: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2497,6 +3116,7 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background: #131313;
   }
 }
 
@@ -2530,6 +3150,12 @@ html {
   top: -6%;
 }
 
+@media (max-width: 1260px) {
+  .dmitry__icon {
+    width: 35%;
+  }
+}
+
 .dmitry__container {
   width: 80%;
   height: 30%;
@@ -2553,21 +3179,28 @@ html {
   box-shadow: 10px 10px 2rem rgba(0, 0, 0, 0.03);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
   .dmitry__container {
-    height: 53%;
+    top: 30%;
+  }
+}
+
+@media (max-width: 760px) {
+  .dmitry__container {
+    height: 35%;
+    top: 58%;
   }
 }
 
 .dmitry__header {
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
   color: #363636;
 }
 
 .dmitry__profession {
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.8rem;
   line-height: 2.6rem;
   text-align: center;
@@ -2588,7 +3221,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -2601,15 +3234,23 @@ html {
   border: 0;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .dmitry__experience {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 760px) {
   .dmitry {
     width: 90%;
     height: 32%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-top: 6%;
     margin-left: 5%;
     margin-right: 3%;
     margin-bottom: 15%;
-    display: block;
   }
 }
 
@@ -2642,6 +3283,12 @@ html {
   top: -6%;
 }
 
+@media (max-width: 1260px) {
+  .larisa__icon {
+    width: 35%;
+  }
+}
+
 .larisa__container {
   width: 80%;
   height: 30%;
@@ -2665,14 +3312,21 @@ html {
   box-shadow: 10px 10px 2rem rgba(0, 0, 0, 0.03);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
   .larisa__container {
-    height: 53%;
+    top: 30%;
+  }
+}
+
+@media (max-width: 760px) {
+  .larisa__container {
+    height: 35%;
+    top: 58%;
   }
 }
 
 .larisa__header {
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -2681,7 +3335,7 @@ html {
 }
 
 .larisa__profession {
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.8rem;
   line-height: 2.6rem;
   text-align: center;
@@ -2702,7 +3356,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -2715,14 +3369,22 @@ html {
   border: 0;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .larisa__experience {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 760px) {
   .larisa {
     width: 90%;
     height: 32%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: 5%;
     margin-right: 3%;
     margin-bottom: 15%;
-    display: block;
   }
 }
 
@@ -2755,6 +3417,12 @@ html {
   top: -6%;
 }
 
+@media (max-width: 1260px) {
+  .alex__icon {
+    width: 35%;
+  }
+}
+
 .alex__container {
   width: 80%;
   height: 30%;
@@ -2778,14 +3446,21 @@ html {
   box-shadow: 10px 10px 2rem rgba(0, 0, 0, 0.03);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
   .alex__container {
-    height: 53%;
+    top: 30%;
+  }
+}
+
+@media (max-width: 760px) {
+  .alex__container {
+    height: 35%;
+    top: 58%;
   }
 }
 
 .alex__header {
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -2794,7 +3469,7 @@ html {
 }
 
 .alex__profession {
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.8rem;
   line-height: 2.6rem;
   text-align: center;
@@ -2815,7 +3490,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -2828,13 +3503,22 @@ html {
   border: 0;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .alex__experience {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 760px) {
   .alex {
     width: 90%;
     height: 32%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: 5%;
     margin-right: 3%;
-    display: block;
+    margin-bottom: 15%;
   }
 }
 
@@ -2856,7 +3540,7 @@ html {
   height: -moz-max-content;
   height: max-content;
   margin-bottom: 1%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 2rem;
   line-height: 2.8rem;
   text-align: center;
@@ -2865,9 +3549,7 @@ html {
 }
 
 .our-clients__icon {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 3%;
   margin-bottom: 2%;
 }
 
@@ -2877,7 +3559,7 @@ html {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 2rem;
   line-height: 2.7rem;
   text-align: center;
@@ -2892,7 +3574,13 @@ html {
   display: flex;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
+  .our-clients {
+    height: 9%;
+  }
+}
+
+@media (max-width: 760px) {
   .our-clients {
     display: none;
   }
@@ -2934,7 +3622,7 @@ html {
       -ms-grid-row-align: center;
       align-self: center;
   margin-left: 3%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.8rem;
   line-height: 2.3rem;
   color: #181818;
@@ -2947,10 +3635,16 @@ html {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.5rem;
   line-height: 180%;
   color: #959595;
+}
+
+@media (max-width: 1260px) {
+  .client-1__text {
+    line-height: 2.1rem;
+  }
 }
 
 .client-1__description {
@@ -2966,7 +3660,7 @@ html {
           align-items: center;
   -ms-flex-item-align: end;
       align-self: end;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.7rem;
   line-height: 2.4rem;
   color: #FFFFFF;
@@ -3038,7 +3732,7 @@ html {
       -ms-grid-row-align: center;
       align-self: center;
   margin-left: 3%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.8rem;
   line-height: 2.3rem;
   color: #181818;
@@ -3051,10 +3745,16 @@ html {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.5rem;
   line-height: 180%;
   color: #959595;
+}
+
+@media (max-width: 1260px) {
+  .client-2__text {
+    line-height: 2.1rem;
+  }
 }
 
 .client-2__description {
@@ -3070,7 +3770,7 @@ html {
           align-items: center;
   -ms-flex-item-align: end;
       align-self: end;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.7rem;
   line-height: 2.4rem;
   color: #FFFFFF;
@@ -3142,7 +3842,7 @@ html {
       -ms-grid-row-align: center;
       align-self: center;
   margin-left: 3%;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 1.8rem;
   line-height: 2.3rem;
   color: #181818;
@@ -3155,10 +3855,16 @@ html {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.5rem;
   line-height: 180%;
   color: #959595;
+}
+
+@media (max-width: 1260px) {
+  .client-3__text {
+    line-height: 2.1rem;
+  }
 }
 
 .client-3__description {
@@ -3220,14 +3926,14 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #FFFFFF), color-stop(50%, #131313f8));
-  background: linear-gradient(to bottom, #FFFFFF 50%, #131313f8 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #FFFFFF), color-stop(50%, rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(to bottom, #FFFFFF 50%, rgba(0, 0, 0, 0.9) 50%);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .questions {
     width: 100%;
-    height: 7%;
+    height: 6%;
   }
 }
 
@@ -3251,12 +3957,39 @@ html {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-family: Yeseva One;
+  font-family: Yeseva One, serif;
   font-size: 2rem;
   line-height: 2.8rem;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+@media (max-width: 760px) {
+  .form-questions__text {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1260px) {
+  .form-questions {
+    width: 70%;
+  }
+}
+
+@media (max-width: 760px) {
+  .form-questions {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #131313;
+  }
 }
 
 .wrapper-name-phone {
@@ -3267,6 +4000,22 @@ html {
   margin-bottom: 4%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media (max-width: 760px) {
+  .wrapper-name-phone {
+    width: 100%;
+    height: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
 }
 
 .form-questions-name {
@@ -3281,7 +4030,7 @@ html {
 }
 
 .form-questions-name__text {
-  font-family: FuturaMediumC;
+  font-family: FuturaMediumC, serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
   color: #FFFFFF;
@@ -3289,6 +4038,16 @@ html {
 
 .form-questions-name__input {
   width: 100%;
+}
+
+@media (max-width: 760px) {
+  .form-questions-name {
+    width: 92%;
+    height: 45%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 .form-questions-phone {
@@ -3303,7 +4062,7 @@ html {
 }
 
 .form-questions-phone__text {
-  font-family: FuturaMediumC;
+  font-family: FuturaMediumC, serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
   color: #FFFFFF;
@@ -3311,6 +4070,16 @@ html {
 
 .form-questions-phone__input {
   width: 100%;
+}
+
+@media (max-width: 760px) {
+  .form-questions-phone {
+    width: 92%;
+    height: 45%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 .form-questions-question {
@@ -3329,7 +4098,7 @@ html {
 }
 
 .form-questions-question__text {
-  font-family: FuturaMediumC;
+  font-family: FuturaMediumC, serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
   color: #FFFFFF;
@@ -3337,6 +4106,16 @@ html {
 
 .form-questions-question__input {
   width: 100%;
+}
+
+@media (max-width: 760px) {
+  .form-questions-question {
+    width: 92%;
+    height: 20%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 .form-questions-checkbox {
@@ -3348,7 +4127,7 @@ html {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, serif;
   font-size: 1.6rem;
   line-height: 2.2rem;
   color: #FFFFFF;
@@ -3378,13 +4157,20 @@ html {
   text-align: center;
 }
 
+@media (max-width: 760px) {
+  .form-questions-checkbox {
+    width: 100%;
+    height: 3%;
+  }
+}
+
 .form-questions-submit {
   width: 20%;
   height: 9%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-family: FuturaDemiC;
+  font-family: FuturaDemiC, serif;
   font-size: 1.3rem;
   line-height: 1.8rem;
   text-align: center;
@@ -3401,28 +4187,251 @@ html {
   background: rgba(227, 184, 115, 0.8);
 }
 
+@media (max-width: 760px) {
+  .form-questions-submit {
+    width: 92%;
+    height: 8%;
+    margin-top: 10%;
+  }
+}
+
 .map {
   width: 100%;
   height: 7%;
-  background-color: #131313f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .map {
     width: 100%;
     height: 6%;
+    background-color: black;
+  }
+}
+
+.map__header {
+  width: 43%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-family: Yeseva One, serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+@media (max-width: 760px) {
+  .map__header {
+    width: 74%;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-top: 0%;
+    -ms-flex-order: 1;
+        order: 1;
+    -webkit-box-ordinal-group: 2;
+  }
+}
+
+.map__icons {
+  width: 7%;
+  margin-bottom: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 1260px) {
+  .map__icons {
+    width: 15%;
+  }
+}
+
+@media (max-width: 760px) {
+  .map__icons {
+    width: 25%;
+    height: 16%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-order: 2;
+        order: 2;
+    -webkit-box-ordinal-group: 3;
+  }
+}
+
+.map__icon-massage:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.map__icon-instagram:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.map-outer {
+  position: relative;
+  text-align: right;
+  height: 340px;
+  width: 740px;
+}
+
+@media (max-width: 760px) {
+  .map-outer {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 340px;
+  width: 740px;
+}
+
+@media (max-width: 760px) {
+  .gmap_canvas {
+    width: 100%;
+    height: 100%;
   }
 }
 
 .footer {
   width: 100%;
-  height: 1.3%;
+  height: 0.8%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #131313;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .footer {
     display: none;
+  }
+}
+
+.logo {
+  margin-left: 2.5%;
+  font-family: "FuturaDemiC", serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.footer-navbar {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-navbar__link {
+  font-family: "FuturaDemiC", serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer-navbar__link_active {
+  font-family: "FuturaDemiC", serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-decoration: none;
+  color: #E3B873;
+}
+
+.footer-navbar__link_active:hover {
+  color: #FFFFFF;
+}
+
+.footer-navbar__link:hover {
+  color: #E3B873;
+}
+
+@media (max-width: 1260px) {
+  .footer-navbar {
+    display: none;
+  }
+}
+
+.footer-phone {
+  font-family: "FuturaDemiC", serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-align: right;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #E3B873;
+}
+
+.footer-phone:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+@media (max-width: 1260px) {
+  .footer-phone {
+    margin-left: 15%;
+  }
+}
+
+.footer-form {
+  width: 10%;
+  height: 45%;
+  margin-right: 2%;
+}
+
+.footer-form__input {
+  width: 100%;
+  height: 100%;
+  font-family: "FuturaDemiC", serif;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  border: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer-form__input:hover {
+  cursor: pointer;
+  background: rgba(227, 184, 115, 0.7);
+}
+
+@media (max-width: 1260px) {
+  .footer-form {
+    width: 20%;
+    height: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,7 +8,7 @@
     &__header {
         height: max-content;
         margin-bottom: 1%;
-        font-family: Yeseva One;
+        font-family: Yeseva One, serif;
         font-size: 2rem;
         line-height: 2.8rem;
         text-align: center;
@@ -17,16 +17,16 @@
     }
 
     &__icon {
-        height: max-content;
+        height: 3%;
         margin-bottom: 2%;
-
+  
     }
 
     &__description {
         width: 32%;
         height: 12%;
         align-self: center;
-        font-family: FuturaBookC;
+        font-family: FuturaBookC, serif;
         font-size: 2rem;
         line-height: 2.7rem;
         text-align: center;
@@ -39,7 +39,11 @@
         display: flex;
     }
 
-    @media (max-width: 460px) {
+    @media (max-width: 1260px) {
+        height: 9%;
+     }
+
+    @media (max-width: 760px) {
        display: none;
     }
 }
@@ -66,7 +70,7 @@
         width: 30%;
         align-self: center;
         margin-left: 3%;
-        font-family: Yeseva One;
+        font-family: Yeseva One, serif;
         font-size: 1.8rem;
         line-height: 2.3rem;
         color: #181818;
@@ -77,10 +81,14 @@
         margin-top: 3%;
         margin-bottom: 7%;
         align-self: end;
-        font-family: FuturaBookC;
+        font-family: FuturaBookC, serif;
         font-size: 1.5rem;
         line-height: 180%;
         color: #959595;
+
+        @media (max-width: 1260px) {
+            line-height: 2.1rem;
+         }
 
     }
 
@@ -91,7 +99,7 @@
         justify-content: space-around;
         align-items: center;
         align-self: end;
-        font-family: Yeseva One;
+        font-family: Yeseva One, serif;
         font-size: 1.7rem;
         line-height: 2.4rem;
         color: #FFFFFF;
@@ -141,7 +149,7 @@
         width: 30%;
         align-self: center;
         margin-left: 3%;
-        font-family: Yeseva One;
+        font-family: Yeseva One, serif;
         font-size: 1.8rem;
         line-height: 2.3rem;
         color: #181818;
@@ -152,10 +160,14 @@
         margin-top: 3%;
         margin-bottom: 7%;
         align-self: end;
-        font-family: FuturaBookC;
+        font-family: FuturaBookC, serif;
         font-size: 1.5rem;
         line-height: 180%;
         color: #959595;
+
+        @media (max-width: 1260px) {
+            line-height: 2.1rem;
+         }
 
     }
 
@@ -166,7 +178,7 @@
         justify-content: space-around;
         align-items: center;
         align-self: end;
-        font-family: Yeseva One;
+        font-family: Yeseva One, serif;
         font-size: 1.7rem;
         line-height: 2.4rem;
         color: #FFFFFF;
@@ -215,7 +227,7 @@
         width: 30%;
         align-self: center;
         margin-left: 3%;
-        font-family: Yeseva One;
+        font-family: Yeseva One, serif;
         font-size: 1.8rem;
         line-height: 2.3rem;
         color: #181818;
@@ -226,10 +238,14 @@
         margin-top: 3%;
         margin-bottom: 7%;
         align-self: end;
-        font-family: FuturaBookC;
+        font-family: FuturaBookC, serif;
         font-size: 1.5rem;
         line-height: 180%;
         color: #959595;
+
+        @media (max-width: 1260px) {
+            line-height: 2.1rem;
+         }
 
     }
 

@@ -11,7 +11,7 @@
       top: 27%;
       left: 42.5%;
 
-      @media (max-width: 460px) {
+      @media (max-width: 760px) {
         display: none;
     }
     }
@@ -21,7 +21,7 @@
       position: absolute;
       left: 91%;
 
-      @media (max-width: 460px) {
+      @media (max-width: 760px) {
        width: 92%;
        position: absolute;
        top: 32%;
@@ -32,12 +32,12 @@
     &__button_left {
       display: none;
 
-      @media (max-width: 460px) {
+      @media (max-width: 760px) {
         width: 9%;
         display: inline-block;
         position: absolute;
         left: 8%;
-        top: 50%;
+        top: 46%;
     }
     }
 
@@ -52,15 +52,15 @@
         cursor: pointer;
       }
 
-      @media (max-width: 460px) {
+      @media (max-width: 760px) {
         width: 9%;
         position: absolute;
         right: 8%;
-        top: 50%;
+        top: 46%;
     }
     }
 
-    @media (max-width: 460px) {
+    @media (max-width: 760px) {
         width: 100%;
         height: 8%;
         position: relative;
@@ -76,7 +76,7 @@
     justify-content: space-around;
 
     &__link_active {
-        font-family: Yeseva One;
+        font-family: Yeseva One, serif;
         font-size: 1.4rem;
         line-height: 1.9rem;
         text-transform: uppercase;
@@ -89,7 +89,7 @@
     }
 
     &__link {
-      font-family: Yeseva One;
+      font-family: Yeseva One, serif;
       font-size: 1.4rem;
       line-height: 1.9rem;
       text-transform: uppercase;
@@ -102,7 +102,7 @@
       }
     }
 
-    @media (max-width: 460px) {
+    @media (max-width: 760px) {
         display: none;
     }
 }
@@ -115,6 +115,10 @@
     left: 7%;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 1260px) {
+      top: 8%;
+    }
 }
 
 .main-info {
@@ -124,16 +128,16 @@
 
     &__header {
       width: 40%;
-      font-family: Yeseva One;
+      font-family: Yeseva One, serif;
       font-size: 2.7rem;
       line-height: 3.7rem;
       letter-spacing: -0.07em;
       text-transform: uppercase;
       color: #E3B873;
 
-      @media (max-width: 460px) {
+      @media (max-width: 760px) {
         position: absolute;
-        bottom: 175%;
+        bottom: 96%;
         left: 90%;
         font-size: 2.2rem;
         line-height: 138.6%;
@@ -151,22 +155,27 @@
         right: 42%;
         top: 34%;
 
-        @media (max-width: 460px) {
+        @media (max-width: 1260px) {
+          display: none;
+        }
+      
+
+        @media (max-width: 760px) {
             display: none;
         }
     }
 
     &__text {
       margin-top: 6%;
-      font-family: FuturaBookC;
+      font-family: FuturaBookC, serif;
       font-size: 1.8rem;
       line-height: 2.9rem;
       color: #FFFFFF;
      
-      @media (max-width: 460px) {
+      @media (max-width: 760px) {
         width: 279%;
         position: absolute;
-        bottom: 87%;
+        bottom: 13%;
         font-size: 1.4rem;
         line-height: 158.48%;
         text-align: center;
@@ -180,16 +189,20 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-row-gap: 28%;
+
+    @media (max-width: 1260px) {
+      margin-top: 80%;
+    }
   
 
     &__header {
-        font-family: Yeseva One;
+        font-family: Yeseva One, serif;
         font-size: 1.8rem;
         line-height: 2.5rem;
         text-transform: uppercase;
         color: #E3B873;
 
-        @media (max-width: 460px) {
+        @media (max-width: 760px) {
           font-size: 1.4rem;
           line-height: 138.6%;
       }
@@ -201,17 +214,17 @@
        line-height: 2rem;
        color: #FFFFFF;
 
-       @media (max-width: 460px) {
+       @media (max-width: 760px) {
         font-size: 1.4rem;
         line-height: 1.9rem;
     }
     }
 
-    @media (max-width: 460px) {
+    @media (max-width: 760px) {
       width: 279%;
       position: absolute;
       left: -10%;
-      bottom: -78%;
+      bottom: -127%;
       display: grid;
       -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
